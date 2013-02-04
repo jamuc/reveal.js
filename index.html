@@ -56,7 +56,7 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
     </ul>				
   </section>
 
-  <!-- Overview Migrationslide -->
+  <!-- Overview Deployment -->
   <section>
     <h2>Overview Migration</h2>
     <ul>
@@ -71,6 +71,29 @@ document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.se
         <li>The GEMS</li>
       </ul>        
     </ul>				
+  </section>
+
+  <!-- Overview Deployment -->
+  <section>
+    <h2>Overview Deployment</h2>
+    <ul>
+      <li>Torquebox</li>
+    </ul>				
+  </section>
+
+  <!-- Motivation -->
+  <section>
+    <h2>Motivation</h2>
+      <ul>
+        <li>People use Windows</li>
+        <li>Consolidate background processes into one application stack</li>
+      </ul>
+    </h2>
+  </section>
+
+  <!-- Traditional Rails Deployment -->
+  <section>
+    <canvas id="tradionalMRI" width="100%" height="100%"></canvas>
   </section>
 
 </div>
@@ -103,6 +126,12 @@ Reveal.initialize({
   ]
 });
 
+
+  //Canvas drawing methods
+  var c=document.getElementById("tradionalMRI");
+  var ctx=c.getContext("2d");
+  ctx.fillStyle="#FF0000";
+  ctx.fillRect(0,0,150,75);
 </script>
 
 </body>
